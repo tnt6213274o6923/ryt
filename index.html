@@ -8,47 +8,17 @@
 </head>
 <body>
     <h1>เขมทิด</h1>
-    <button id="changeText">เปลี่ยนข้อความ</button>
-    <p id="outputText"></p>
+    <div id="output">เขมทิด</div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-    const button = document.getElementById("changeText");
-    const outputText = document.getElementById("outputText");
+        // รับอ้างอิงไปยัง div ที่มี id "output"
+var outputDiv = document.getElementById("output");
 
-    button.addEventListener("click", function() {
-        outputText.textContent = "ข้อความถูกเปลี่ยนแล้ว!";
-    });
-});
+// กำหนดข้อความที่ต้องการแสดง
+var textToShow = "เขมทิด";
+
+// แสดงข้อความใน div
+outputDiv.textContent = textToShow;
 
     </script>
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-h1 {
-    color: #333;
-}
-
-p {
-    font-size: 18px;
-    color: #666;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-    </style>
 </body>
 </html>
